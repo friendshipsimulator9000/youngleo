@@ -69,10 +69,31 @@
                 box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
             }
         }
+
+        /* Styling for each part of the title */
+        .title-part {
+            display: inline-block;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(255, 255, 0, 0.8); /* Yellow glow */
+        }
+
+        .title-part.red {
+            color: red; /* Red color for "MONGOLIAN" and "SHEKELS" */
+            text-shadow: 0 0 8px rgba(255, 255, 0, 0.8); /* Yellow glow */
+        }
+
+        .title-part.blue {
+            color: blue; /* Blue color for "CYBER" */
+            text-shadow: 0 0 8px rgba(255, 255, 0, 0.8); /* Yellow glow */
+        }
     </style>
 </head>
 <body>
-    <h1>MONGOLIAN CYBER SHEKELS</h1>
+    <h1>
+        <span class="title-part red">MONGOLIAN</span>
+        <span class="title-part blue">CYBER</span>
+        <span class="title-part red">SHEKELS</span>
+    </h1>
     <h2>🚀 to the MooûÙuoÔoOôÔoN!</h2>
     <img src="landing.gif" alt="Mongolian Cyber Shekels Landing Image" width="500" height="500">
 
