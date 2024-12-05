@@ -40,13 +40,44 @@
         p {
             margin-bottom: 20px; /* Add space below the paragraph */
         }
+
+        .buy-button {
+            font-size: 20px;
+            color: black;
+            background-color: yellow;
+            border: 2px solid orange;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 223, 0, 0.8);
+            animation: pulse 2s infinite;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(255, 223, 0, 0.8);
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 0 20px rgba(255, 223, 0, 1);
+            }
+        }
     </style>
 </head>
 <body>
     <h1>MONGOLIAN CYBER SHEKELS</h1>
     <h2>🚀 to the MooûÙuoÔoOôÔoN!</h2>
-    <img src="landing.jpg" alt="Tibetan Cyber Shekels Landing Image">
-    <a href="https://raydium.io/swap/" target="_blank">APE IN HERE</a>
+    <img src="landing.gif" alt="Mongolian Cyber Shekels Landing Image">
+    
+    <!-- Buy Button -->
+    <a href="https://raydium.io/swap/" target="_blank" class="buy-button">👉 BUY HERE 👈</a>
+
     <p>Contract Address: </p>
     <p>Ticker: $MONGOL</p>
     <a href="https://t.me/+UMTVXuZdFeJmZTI5" target="_blank">TELEGRAM - Join the channel</a>
@@ -61,6 +92,5 @@
     <footer>
         <p style="font-size: 0.75rem; color: lightgray; margin-top: 20px;">$MONGOL is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. It's completely useless and for entertainment purposes only.</p>
     </footer>
-
 </body>
 </html>
