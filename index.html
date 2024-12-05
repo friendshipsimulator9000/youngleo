@@ -41,31 +41,32 @@
             margin-bottom: 20px; /* Add space below the paragraph */
         }
 
-        .buy-button {
-            font-size: 20px;
-            color: black;
-            background-color: yellow;
-            border: 2px solid orange;
-            border-radius: 10px;
-            padding: 10px 20px;
-            text-decoration: none;
+        /* Styling and animation for the button */
+        .pulsating-button {
             display: inline-block;
+            padding: 15px 30px;
+            background-color: yellow;
+            color: black;
+            font-size: 24px;
+            border-radius: 8px;
+            text-decoration: none;
             text-align: center;
-            box-shadow: 0 0 10px rgba(255, 223, 0, 0.8);
-            animation: pulse 2s infinite;
-            font-family: Arial, sans-serif;
-            cursor: pointer;
-            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+            animation: pulsate 1.5s infinite;
         }
 
-        @keyframes pulse {
-            0%, 100% {
+        @keyframes pulsate {
+            0% {
                 transform: scale(1);
-                box-shadow: 0 0 10px rgba(255, 223, 0, 0.8);
+                box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
             }
             50% {
                 transform: scale(1.1);
-                box-shadow: 0 0 20px rgba(255, 223, 0, 1);
+                box-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
             }
         }
     </style>
@@ -74,31 +75,11 @@
     <h1>MONGOLIAN CYBER SHEKELS</h1>
     <h2>🚀 to the MooûÙuoÔoOôÔoN!</h2>
     <img src="landing.gif" alt="Mongolian Cyber Shekels Landing Image" width="500" height="500">
-    
+
     <!-- Centered Buy Button -->
     <div style="text-align: center; margin-top: 20px;">
-        <a href="https://raydium.io/swap/" target="_blank" style="
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: yellow;
-            color: black;
-            font-size: 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
-            animation: pulsate 1.5s infinite;
-        ">👉 BUY HERE 👈</a>
+        <a href="https://raydium.io/swap/" target="_blank" class="pulsating-button">👉 BUY HERE 👈</a>
     </div>
-
-    <p>Contract Address: </p>
-    <p>Ticker: $MONGOL</p>
-    <a href="https://t.me/+UMTVXuZdFeJmZTI5" target="_blank">TELEGRAM - Join the channel</a>
-    <a href="https://dexscreener.com/solana/" target="_blank">CHART - Meditate on the price</a>
-    <h3>₪</h3>
-    <audio autoplay loop controls>
-      <source src="mongol.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
 
     <!-- Disclaimer Section -->
     <footer>
